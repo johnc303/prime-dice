@@ -1,0 +1,24 @@
+{
+    "name": "PrimeDice",
+    "title": "Prime Dice",
+    "description": "Allows rolling ",
+    "version": "1.2.3",
+    "author": ["Johnathan Castle"],
+    "scripts": ["./js/prime_dice.js"],
+    "styles": ["/css/prime_dice.css"],
+    "packs": [],
+    "systems": ["prime"],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+    ],
+    "socket": true,
+    "url": "https://github.com/johnc303/prime-dice",
+    "manifest": "https://github.com/johnc303/prime-dice/master/module.json",
+    "download": "https://github.com/johnc303/prime-dice/archive/v0.1.zip",
+    "minimumCoreVersion": "0.6.0",
+    "compatibleCoreVersion": "0.8.0"
+}
