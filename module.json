@@ -1,7 +1,7 @@
 {
     "name": "PrimeDice",
     "title": "Prime Dice",
-    "description": "Allows rolling ",
+    "description": "Allows rolling of the Prime D20 and 2D6 +5/-5 ranged dice pools.",
     "version": "1.2.3",
     "author": ["Johnathan Castle"],
     "scripts": ["./js/prime_dice.js"],
@@ -17,8 +17,8 @@
     ],
     "socket": true,
     "url": "https://github.com/johnc303/prime-dice",
-    "manifest": "https://github.com/johnc303/prime-dice/master/module.json",
-    "download": "https://github.com/johnc303/prime-dice/archive/v0.1.zip",
+    "manifest": "https://raw.githubusercontent.com/johnc303/prime-dice/master/module.json",
+    "download": "https://github.com/johnc303/prime-dice/raw/master/archive/v0.1.zip",
     "minimumCoreVersion": "0.6.0",
     "compatibleCoreVersion": "0.8.0"
 }
