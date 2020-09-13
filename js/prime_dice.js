@@ -55,10 +55,10 @@ class PRIME_DICE {
 
 	static renderChatLog()
 	{
-		PRIME_DICE.attachedToRollDiceIcon()
+		PRIME_DICE.attachToRollDiceIcon()
 	}
 
-	static attachedToRollDiceIcon()
+	static attachToRollDiceIcon()
 	{
 		var diceIcon = $('.roll-type-select .fas.fa-dice-d20');
 		
