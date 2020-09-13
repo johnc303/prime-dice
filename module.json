@@ -7,7 +7,7 @@
     "scripts": ["./js/prime_dice.js"],
     "styles": ["/css/prime_dice.css"],
     "packs": [],
-    "systems": ["prime"],
+	"systems": ["Prime"],
 	"languages": [
 		{
 			"lang": "en",
