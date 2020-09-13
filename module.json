@@ -2,7 +2,7 @@
     "name": "PrimeDice",
     "title": "Prime Dice",
     "description": "Allows rolling of the Prime D20 and 2D6 +5/-5 ranged dice pools.",
-    "version": "1.2.3",
+    "version": "0.1",
     "author": ["Johnathan Castle"],
     "scripts": ["./js/prime_dice.js"],
     "styles": ["/css/prime_dice.css"],
