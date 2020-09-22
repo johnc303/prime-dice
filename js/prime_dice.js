@@ -1,3 +1,13 @@
+/*
+https://www.npmjs.com/package/math-random
+
+https://www.npmjs.com/package/secure-random
+
+https://www.npmjs.com/package/pure-random-number
+
+https://www.npmjs.com/package/secure-random-uniform
+*/
+
 class PRIME_DICE {
 	static async init()
 	{
@@ -63,7 +73,7 @@ class PRIME_DICE {
 		var diceIcon = $('.roll-type-select .fas.fa-dice-d20');
 		
 		diceIcon.on('click', (event) => {
-			PRIME_DICE.openPrimeDice();
+			PRIME_DICE.openPrimeDice("rollDiceIcon");
 		});
 	}
 
@@ -115,28 +125,30 @@ class PRIME_DICE {
 
 	static openPrimeDice()
 	{
-		alert("Prime dice!");
+		//alert("Prime dice!");
+		if (PRIME_DICE.diceRoller === undefined)
+		{
+			PRIME_DICE.diceRoller = new PRIME_DICE_ROLLER();
+		}
+		PRIME_DICE.diceRoller.render(true);
 	}
 
+	/*
 	static getSceneControlButtons(buttons)
 	{
-		let tokenButton = buttons.find(b => b.name == "token")
-
-		if (tokenButton)
+		buttons.push(
 		{
-			tokenButton.tools.push(
-			{
-				name: "prime-dice",
-				title: game.i18n.localize('PRIME_DICE.Title'),
-				icon: "fas fa-dice-d20",
-				onClick: () => PRIME_DICE.openPrimeDice(),
-				button: true
-			});
-		}
+			name: "prime-dice",
+			title: game.i18n.localize('PRIME_DICE.Title'),
+			icon: "fas fa-dice-d20",
+			onClick: () => PRIME_DICE.openPrimeDice(),
+			button: true
+		});
 	}
+	*/
 }
 
 Hooks.once('init', PRIME_DICE.init);
 Hooks.on('ready', PRIME_DICE.ready);
-Hooks.on('getSceneControlButtons', PRIME_DICE.getSceneControlButtons)
+//Hooks.on('getSceneControlButtons', PRIME_DICE.getSceneControlButtons)
 Hooks.on('renderChatLog', PRIME_DICE.renderChatLog);
